@@ -1,3 +1,4 @@
+from ast import NotIn
 from methods.one_RGP import SelectRgp
 from methods.two_GLP import SelectGlp
 from methods.three_Non_RGP import SelectNonGlp
@@ -27,13 +28,15 @@ method = {1 : SelectRgp.last, 2 : SelectGlp.glp, 3 : SelectNonGlp.non_rgp, 4 : S
 
 
 def calculate():
-    i = int(input("enter a method number:"))
+    
     try:
+        i = int(input("enter a method number:"))
         if i in method.keys():
             p = method[i]
             return p()
-        else:
+        elif not i in  method.key():
             raise ValueError
+
     except ValueError:
         return "invalid input!!!!"
 
