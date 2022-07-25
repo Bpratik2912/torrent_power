@@ -38,10 +38,10 @@ class SelectHtmd:
                 raise ValueError
             elif (h >= 0):
                 total = total_amount + (h * 0.30)
-                return (f'you have to pay {total}Rs.')
+                print(f'you have to pay {total}Rs.')
 
             
         except ValueError:
-            return "invalid input!!!!!!!"
+            print("invalid input!!!!!!!")
 #     print(htmd())
-# SelectHtmd
+SelectHtmd

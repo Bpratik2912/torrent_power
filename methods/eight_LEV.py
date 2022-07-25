@@ -9,8 +9,8 @@ class SelectLev:
                 energy_charges = (i * 4.20)
                 FIXED_CHARGES = 25
                 total_amount = energy_charges + FIXED_CHARGES
-                return (f'you have to pay {total_amount}Rs.')
+                print(f'you have to pay {total_amount}Rs.')
         except ValueError:
-            return "invalid input!!!!!!!"
-    print(lev())
+            print("invalid input!!!!!!!")
+    # print(lev())
 SelectLev

@@ -30,15 +30,15 @@ class SelectLtmdOne:
                 raise ValueError
             elif k <= 90:
                 total_amount = (i * 0.03) + energy_charges
-                return (f'you have to pay {total_amount}Rs.')
+                print(f'you have to pay {total_amount}Rs.')
             elif (k > 90 and k <= 95):
                 total_amount =  (i * 0.0015) + energy_charges
-                return (f'you have to pay {total_amount}Rs.')
+                print(f'you have to pay {total_amount}Rs.')
             elif (k > 95):
                 total_amount =  (i * 0.0027) + energy_charges
-                return (f'you have to pay {total_amount}Rs.')
+                print(f'you have to pay {total_amount}Rs.')
 
         except ValueError:
-            return "invalid input!!!!!!!"
+            print("invalid input!!!!!!!")
 #     print(ltmd_one())
-# SelectLtmdOne
+SelectLtmdOne

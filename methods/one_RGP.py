@@ -2,7 +2,7 @@
 # from errno import ENETRESET
 
 class SelectRgp:
-    t = int(input("enter type of power:"))
+    
     def rgp():
         try:
 
@@ -45,13 +45,16 @@ class SelectRgp:
             return (f'you have to pay {total_amount}Rs.')
         except ValueError:
             return "invalid input!!!!!"
+    def last():
+        t = int(input("enter type of power:"))
+        if t == 1:
+            print(SelectRgp.rgp())
+        elif t == 2:
+            print(SelectRgp.bpl())
+        else:
+            print("invalid input!")
 
-    if t == 1:
-        print(rgp())
-    elif t == 2:
-        print(bpl())
-    else:
-        print("invalid input!")
+            
 
 SelectRgp
         

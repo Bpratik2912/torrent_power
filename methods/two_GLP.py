@@ -16,14 +16,14 @@ class SelectGlp:
             
             if j == 1:
                 total_amount = (energy_charges + 30)
-                return (f'you have to pay {total_amount}Rs.')
+                print(f'you have to pay {total_amount}Rs.')
             elif j == 3:
                 total_amount = (energy_charges + 70)
-                return (f'you have to pay {total_amount}Rs.')
+                print(f'you have to pay {total_amount}Rs.')
             else :
-                return ("invalid input!")
+                print("invalid input!")
         except ValueError:
-            return "invalid input!!!!!!"
+            print("invalid input!!!!!!")
 
-    print(glp())
-# SelectGlp
+    # print(glp())
+SelectGlp

@@ -10,14 +10,14 @@ class SelectEv:
 
             elif (i < j):
                 energy_charges = (i * 25) + (i * 4.10) 
-                return (f'you have to pay {energy_charges}Rs.')  
+                print(f'you have to pay {energy_charges}Rs.')  
                 
             elif (i > j):
                 energy_charges = (i * 50) + (i * 4.10)
-                return (f'you have to pay {energy_charges}Rs.')
+                print(f'you have to pay {energy_charges}Rs.')
     
                 
         except ValueError:
-            return "invalid input!!!!!!!"
-    htmd_ev()
+            print("invalid input!!!!!!!")
+    # htmd_ev()
 SelectEv

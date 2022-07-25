@@ -7,8 +7,8 @@ class SelectSl:
                 raise ValueError       
             elif i >= 0:
                 energy_charges = (i * 4.30)
-                return (f'you have to pay {energy_charges}Rs.')
+                print(f'you have to pay {energy_charges}Rs.')
         except ValueError:
-            return "invalid input!!!!!!!"
+            print("invalid input!!!!!!!")
 #     print(sl())
-# SelectSl
+SelectSl
